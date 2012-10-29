@@ -1,0 +1,6 @@
+1. Create tag files
+ctags -R --exclude=*.js . ~/.rvm/gems/ruby-1.9.3-p194/gems/
+
+2. Set work path for fuzzyfinder
+  let g:fuf_coveragefile_globPatterns = ['**/.*', '**/*']
+  let g:fuf_coveragefile_globPatterns = ['~/workspace/house_in_sight/house_in_sight/**/.*', '~/workspace/house_in_sight/house_in_sight/**/*']
