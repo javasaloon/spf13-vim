@@ -17,7 +17,7 @@ lnif() {
     fi
 }
 
-echo "Thanks for installing spf13-vim\n"
+echo "Thanks for installing spf13-vim forked by @jackycheng\n"
 
 # Backup existing .vim stuff
 echo "backing up current vim config\n"
@@ -27,7 +27,7 @@ for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && [ ! -L $i ] && m
 
 if [ ! -e $endpath/.git ]; then
     echo "cloning spf13-vim\n"
-    git clone --recursive -b 3.0 http://github.com/spf13/spf13-vim.git $endpath
+    git clone --recursive -b 3.0 http://github.com/jackycheng/spf13-vim.git $endpath
 else
     echo "updating spf13-vim\n"
     cd $endpath && git pull
