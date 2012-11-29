@@ -18,3 +18,10 @@ let g:fuf_enumeratingLimit = 50
 let g:fuf_coveragefile_prompt = '=>'
 
 set foldmethod=indent
+
+
+"Auto commands
+autocmd BufWritePost .vimrc.fork source ~/.vimrc.fork
+autocmd VimEnter,TabEnter * cd d:\ror\rails-study
+autocmd VimLeave * mksession! project
+
